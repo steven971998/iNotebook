@@ -8,7 +8,7 @@ const Navbar = () => {
     let history = useHistory();
     const handleLogout =()=>{
     localStorage.removeItem('token');
-    history.push("/login");    
+    history.push("/login"); // once logout button is pressed then it will take us to login page.   
     }
     let location = useLocation();
     return (
@@ -23,9 +23,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className={`nav-link ${location.pathname==="/"? "active": ""}`} aria-current="page" to="/">Home</Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className={`nav-link ${location.pathname==="/about"? "active": ""}`} to="/about">About</Link>
-                        </li>
+                        </li> */}
 
                     </ul>
                     {!localStorage.getItem('token')? <form className="d-flex"> 

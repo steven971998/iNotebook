@@ -6,13 +6,13 @@ import {
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 import { Home } from './components/Home';
-import About from './components/About';
+// import About from './components/About';
 import NoteState from './context/notes/NoteState';
 import  Alert  from './components/Alert';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import { useState } from 'react';
-
+import './components/style.css';
 function App() {
   const [alert, setAlert] = useState(null);
   const showAlert = (message, type) => {
@@ -36,7 +36,7 @@ return (
               <Home showAlert={showAlert}/>
             </Route>
             <Route exact path="/about">
-              <About />
+              {/* <About /> */}
             </Route>
             <Route exact path="/login">
               <Login showAlert={showAlert}/>

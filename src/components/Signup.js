@@ -37,11 +37,13 @@ const Signup = () => {
 
 
     return (
-    <div className="container">
+      <div className="signup-box">
+        <h2 id='signup-text'>SignUp</h2>
+    <div className="container"id='signup'>
     <form onSubmit={handleSubmit}>
   <div className="mb-3">
     <label htmlFor="name" className="form-label">Name</label>
-    <input type="name" className="form-control" id="name" name="name" onChange={onChange} aria-describedby="emailHelp" />
+    <input type="name" className="form-control" id="name" name="name" onChange={onChange} required aria-describedby="emailHelp" />
     </div>
   <div className="mb-3">
     <label htmlFor="email" className="form-label">Email address</label>
@@ -57,6 +59,7 @@ const Signup = () => {
   </div>
   <button type="submit" className="btn btn-primary">Submit</button>
 </form>
+    </div>
     </div>
   )
 }
