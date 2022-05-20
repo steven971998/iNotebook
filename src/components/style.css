@@ -14,7 +14,7 @@ body{
     color: white;
     font-size: 181px;
     font-family: serif;
-    margin-top: -60px;
+    margin-top: -75px;
 }
 #iNotebook-description{
     color: lightyellow;
@@ -35,6 +35,7 @@ body{
     padding-top: 16px;
 }
 
+
 .login-box{
     margin-top:-272px;
     margin-left: 600px;
@@ -44,11 +45,6 @@ body{
     color: cyan;
 }
 
-/* Image */
-img{
-    width: 300px;
-    height: 300px;
-}
 /* Add Note */
 
 #AddNote-text{
@@ -66,23 +62,32 @@ img{
 .yourNotes-box{
     border: 2px solid yellow;
     border-radius: 30px;
-    width: 880px;
-    height: 510px;
-    margin: -414px 327px;}
+    /* width: 880px; */
+    width: 100%;
+    height: 100% ;
+    /* height: 491px; */
+    margin: -419px 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    
+}
 
-#YourNotes-text{
-    margin-left: 365px;
-    margin-top: 10px;
+#YourNotes-text{margin-left: 701px;
+    margin-top: -458px;
     color: cornsilk;
+    padding-bottom: 421px;
+
 }
 
 #UpdatedNotes{
     margin-left: 10px;
 }
 
-.card-body{
+/* .card-body{
     display: inline;
-}
+} */
 /* SignUp */
 
 #signup{
@@ -105,7 +110,7 @@ img{
     padding-top: 70px;
     height: 537px;
     width: 710px;
-    margin-top: -19px;
+    margin-top: -30px;
     background-color: maroon;
 }
 
@@ -128,6 +133,248 @@ form{
     margin-top: 8px;
 }
 
-#email , #password{
+#email-L , #password-L{
     width: 500px;
+}
+
+
+/* For mobiles */
+
+@media only screen and (max-width:768px){
+ 
+    #iNotebook-text{
+        color: white;
+        font-size: 71px;
+        font-family: serif;
+        margin-top: -13px;
+        margin-left: 13px;
+    }
+    #iNotebook-description{
+        color: lightyellow;
+        font-size: 18px;
+        width: 172px;
+        font-family: monospace;
+        margin-top: 120px;
+    }
+ 
+    #login{
+        border: 2px solid rgb(192, 192, 159);
+        border-radius: 10px;
+        background-color: navy;
+        color: antiquewhite;
+        padding-bottom: 22px;
+        width: 191px;
+        padding-left: 20px;
+        padding-top: 16px;
+    }
+    
+    .login-box{
+        margin-top:-347px;
+        margin-left: 190px;
+    }    
+
+
+    #email-L,#password-L{
+        width: 140px;
+        height: 23px;
+    }
+    #email , #password,#name,#password,#cpassword{
+        width: 200px;
+        height: 22px;
+    }
+
+
+    #signup{border: 2px solid yellow;
+        border-radius: 29px;
+        background-color: navy;
+        color: antiquewhite;
+        padding-bottom: 22px;
+        width: 251px;
+        padding-left: 20px;
+        padding-top: 16px;
+        margin-top: 59px;
+    }
+    
+    .signup-box{padding-top: 80px;
+        padding-top: 80px;
+        border: 4px solid yellow;
+        border-radius: 60px;
+        padding: 41px 3px;
+        margin-left: 36px;
+        padding-top: 70px;
+        height: 490px;
+        width: 317px;
+        margin-top: 8px;
+        background-color: maroon;}
+    
+     #signup-text{    font-size: 39px;
+        margin: -54px 97px;
+     }   
+    
+        h2{
+        padding-bottom: 21px;
+    }
+    
+    #AddNote-text{
+        margin-left: 66px;
+        color: cornsilk;
+        margin-top: -5px;
+        margin-bottom: -36px;
+    }
+
+    #box-add{
+        padding-top: 16px;
+
+    }
+    .addnote{
+        border: 2px solid yellow;
+        border-radius: 30px;
+        width: 285px;
+        height: 287px;
+        margin-left: 55px;
+        margin-top: -39px;
+    }
+/*     
+    #btn-add-note{
+    } */
+
+    .btn-primary.disabled, .btn-primary:disabled {
+        color: #fff;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        width: 92px;
+        height: 34px;
+        margin-top: -4px;
+        border-radius: 7px;
+    }
+
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+        border-radius: 7px;
+        margin-top: -8px;
+        height: 34px;
+    }
+    .yourNotes-box{border: 2px solid yellow;
+        border-radius: 30px;
+        width: 100%;
+        /* height: 317px;      */
+        height: 100%;
+        margin-left: 15px; 
+        display: flex;
+    flex-direction: column;
+    justify-content: start;
+    }
+    
+    #YourNotes-text{
+        margin-left: 124px;
+        margin-top: 9px;
+     }
+    
+    #UpdatedNotes{
+        margin-left: 10px;
+    }
+    
+    /* .card-body{
+        display: inline;
+    }    */
+
+    #title,#description,#tag{
+        width: 208px;
+        height: 18px;
+        margin-top: -3px;
+    }
+
+    #home{
+        display: none;
+    }
+
+    .col-md-3{
+        width: min-content;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width:768px) and (max-width:1200px){
+
+    #login{    margin-left: -147px;
+        width: 261px;
+    }
+
+    #email-L , #password-L{
+        width: 212px;
+    }
+
+    #iNotebook-description{
+        width: 400px;
+    }
+ 
+    
+#iNotebook-text{
+    font-size: 139px;
+    /* margin-top: -75px; */
+}
+
+.signup-box {
+    padding-top: 80px;
+    border-radius: 60px;
+    padding: 41px 3px;
+    margin-left: 69px;
+    padding-top: 70px;
+    height: 420px;
+    width: 536px;
+    margin-top: -24px;
+ }
+
+ #signup {
+    padding-bottom: 22px;
+    width: 427px;
+    padding-left: 20px;
+    padding-top: 16px;
+    margin-top: 45px;
+    height: 305px;
+ }
+
+ #signup-text {
+    margin: -56px 174px;
+ }
+
+#signup-form{
+    margin: 3px 4px;
+}
+
+#email , #password,#name,#password,#cpassword{
+    width: 267px;
+    height: 19px;
+    margin-top: -9px;
+}
+
+.addnote {
+    width: 258px;
+    margin-left: -29px;
+    height: 404px;
+}
+
+#AddNote-text{
+    margin-left:36px;
+}
+
+.yourNotes-box {
+    border: 2px solid yellow;
+    border-radius: 30px;
+    width: 100vw;
+    height: 100%;
+    /* height: 491px; */
+    margin: -424px 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start
+}
+
+#YourNotes-text {
+    margin-left: 451px;
+    margin-top: -443px;
+    color: cornsilk;
+    padding-bottom: 421px;
+    width: max-content;
+}
 }

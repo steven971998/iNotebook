@@ -21,7 +21,7 @@ const AddNote = (props) => {
         <div className="addnote">
         <div className="container my-3">
             <h2 id='AddNote-text'>Add a Note</h2>
-            <form className="my-3">
+            <form className="my-3" id='box-add'>
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label">Title</label>
                     <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" value={note.title} onChange={onChange} minLength={2} required /> 
@@ -35,7 +35,7 @@ const AddNote = (props) => {
                     <input type="text" className="form-control" id="tag" name="tag" value={note.tag} onChange={onChange}  />
                 </div>
                
-                <button disabled={note.title.length<2 || note.description.length<2} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
+                <button disabled={note.title.length<2 || note.description.length<2} type="submit" id="btn-add-note" className="btn btn-primary" onClick={handleClick}>Add Note</button>
             </form>
         </div>
         </div>

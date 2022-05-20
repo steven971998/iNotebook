@@ -74,8 +74,8 @@ const Notes = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="yourNotes-box">
                 <h2 id='YourNotes-text'>Your Notes</h2>
+            <div className="yourNotes-box">
             <div className="row my-3" id='UpdatedNotes'>
                 <div className="container mx-2">
                     {notes.length === 0 && 'No notes to display.'}
