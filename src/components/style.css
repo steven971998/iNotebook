@@ -37,7 +37,8 @@ body{
 
 
 .login-box{
-    margin-top:-272px;
+    /* margin-top:-272px; */
+    margin-top:-304px;
     margin-left: 600px;
 }
 
@@ -63,10 +64,12 @@ body{
     border: 2px solid yellow;
     border-radius: 30px;
     /* width: 880px; */
-    width: 100%;
+    /* width: 100%; */
+    width: 75%;
     height: 100% ;
     /* height: 491px; */
     margin: -419px 327px;
+    padding-right: 23px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -85,13 +88,24 @@ body{
     margin-left: 10px;
 }
 
+.card-title{
+    overflow-wrap: anywhere;
+}
+.card-text{
+    overflow-wrap: anywhere;
+}
+
 /* .card-body{
     display: inline;
 } */
+
+
+
 /* SignUp */
 
 #signup{
-    border: 2px solid yellow;
+    border:2px solid rgb(192, 192, 159);
+    /* border: 2px solid yellow; */
     border-radius: 10px;
     background-color: navy;
     color: antiquewhite;
@@ -103,7 +117,7 @@ body{
 }
 
 .signup-box{padding-top: 80px;
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
     border-radius: 60px;
     padding: 41px 3px;
     margin-left: 140px;
@@ -111,12 +125,12 @@ body{
     height: 537px;
     width: 710px;
     margin-top: -30px;
-    background-color: maroon;
+    /* background-color: maroon; */
 }
 
  #signup-text{    font-size: 50px;
     margin: -56px 244px;
-    color: yellow;
+    color: cyan;
     font-family: ui-rounded;
  }   
 
